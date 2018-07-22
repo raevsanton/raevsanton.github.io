@@ -1,0 +1,33 @@
+doctype html
+html
+    include ./head
+    body
+            include ./main-screen  
+            include ./blocks-mobile
+            include ./warning                              
+            include ./services
+            include ./about
+            include ./map
+            include ./addition
+            include ./footer
+    script(src="//code.jquery.com/jquery-3.3.1.min.js")
+    script(src="/edem/assets/js/slick.min.js")
+    script.
+        $(document).ready(function(){
+            $('.center').slick({
+            });
+        });
+    script.
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() >= 1500) {
+                    $('#footer-arrow').fadeIn();
+                } else {
+                    $('#footer-arrow').fadeOut();
+                }
+            });
+            $('#footer-arrow').click(function() {
+                    $('body,html').animate({scrollTop:0},800);
+                    });
+            });
+    script(src="/edem/assets/js/scripts.js")

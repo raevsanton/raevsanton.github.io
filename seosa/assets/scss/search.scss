@@ -1,0 +1,29 @@
+input {
+    outline: none;
+    width: 257px;
+    height: 29px;
+    color: $black2;
+    font: 14px $font1;
+}
+
+input [type="text"] {
+    border-style: solid;
+    border-width: 1px;
+    border-color:  rgba(0, 0, 0, 30);
+    background-color:  #f7f7f7;
+    padding-left: 10px;
+}
+
+input[type="image"] {
+    position: relative;
+    width: 25px;
+    height: 19px;
+    left: -35px;
+    vertical-align: middle;
+}
+
+.form__input {
+    color: $black2;
+    font: 14px $font1;
+    padding-left: 10px;
+}

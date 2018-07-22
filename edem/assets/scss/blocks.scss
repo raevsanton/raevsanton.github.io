@@ -1,0 +1,85 @@
+.blocks {
+    margin-top: 89px;
+    position: relative;
+    &__wrp {
+        display: flex;
+        justify-content:  flex-end;
+    }
+}
+.item1 {
+    width: 305px;
+    height: 339px;
+    background: url("/edem/assets/images/pic1.png") no-repeat center / cover;
+}
+.item2 {
+    box-sizing: border-box;
+    width: 305px;
+    height: 339px;
+    background: url("/edem/assets/images/pic2.png") no-repeat center / cover;
+    .block-price {
+        margin-top: 10px;
+    }
+}
+.item3 {
+    color: $white;
+    box-sizing: border-box;
+    width: 305px;
+    height: 339px;
+    background: url("/edem/assets/images/pic3.png") no-repeat center / cover;
+    .block-ul {
+        color: $white;
+    }   
+    .block-price {
+        color: $white;
+        margin-top: 9px;
+    }
+}
+.block-text {
+    text-align: center;
+}
+.block-caption {
+    font: 33px $font1;
+    color: #f0cf5c;
+    text-transform: uppercase;
+    text-shadow: 2.298px 1.928px 1px rgba(156, 114, 0, 0.94);
+    margin-top: 52px;
+
+}
+.block-ul {
+    font: 16px $font6;
+    color: $black;
+    margin-top: 14px;
+}
+.block-price {
+    font: 30px $font5;
+    color: $black;
+    text-transform: uppercase;
+    margin-top: 72px;
+}
+.btn_blocks {
+    margin-top: 17px;
+    width: 126px;
+    height: 38px;
+    color: #fefefe;
+    background:#252525;
+    padding: auto;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.btn_blocks:hover {
+    margin-top: 17px;
+    width: 126px;
+    height: 38px;
+    color: #fefefe;
+    background:#797979;
+    padding: auto;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.blocks-mobile {
+    display: none;
+}

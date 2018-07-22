@@ -1,0 +1,70 @@
+.block-left-text {
+    & .h1 {
+        color: #fff;
+    }
+    & #p {
+        color: #fff;
+    }
+}
+.text2 {
+    margin-top: 28px;
+    color: #fff;
+    font: 16px $font6;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+.paragraph {
+    margin-top: 80px;
+}
+.block-left {
+    height: 853px;
+    background-image: url("/ali-sayed/assets/images/2.png");
+    padding: 71px 80px 59px 59px;
+}
+.block-right-back1 {
+    width: 752px;
+    height: 427px;
+    background-image: url("/ali-sayed/assets/images/3.png");
+    padding: 71px 143px 70px 54px;
+    & .text2 {
+        color: #262f32;
+    }
+}
+.block-right-back2 {
+    width: 752px;
+    height: 427px;
+    background-image: url("/ali-sayed/assets/images/4.png");
+    padding: 71px 143px 70px 54px;
+    & .h1 {
+        color: #fff;
+    }
+    & .btn {
+        border-color: #fff;
+        color: #fff;
+    }
+        &:hover {
+            background-color:  #fff;
+            color: #262f32;
+            transition: 1s; 
+    }       
+}
+.btn {
+    margin-top: 70px;
+    border-radius: 11px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #262f32;
+    background-color:  rgba(0, 0, 0, 0);
+    width: 212px;
+    height: 52px;
+    font: 16px $font6;
+    font-weight: 400;
+    line-height: 31.998px;
+    text-align: center;
+    &:hover {
+        background-color:  #262f32;
+        color: #fff;
+        transition: 1s;
+    }
+}

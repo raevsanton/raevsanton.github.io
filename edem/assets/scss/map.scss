@@ -1,0 +1,20 @@
+.map {
+    margin-top: 32px;    
+}
+.map-info {
+    align-items: center;
+    margin: 40px 0px 86px 0;
+    position: absolute;
+    width: 307px;
+    height: 422px;
+    background-color:rgba(175, 209, 243, 0.72);
+    padding: 0 6px 52px 31px;
+}
+.h-map {
+    font: 16px $font1;
+    color: #000;
+}
+.text-map {
+    font: 14px $font2;
+    color: #484848;
+}

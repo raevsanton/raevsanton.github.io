@@ -1,0 +1,128 @@
+@import "/assets/resources/fonts/styles.css";
+@import "_base";
+@import "_var";
+.content {
+    height: 100%;
+}
+.content__left {
+    font: 50px $font2;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    background-color: rgb(19, 19, 19);
+    float: left;
+      &:hover:before,
+      &:hover span:nth-child(1) {
+        visibility: visible;
+        animation: glitchy 0.3s ease infinite reverse;
+      }
+      &:hover:after,
+      &:hover span:nth-child(2) {
+        visibility: visible;
+        animation: glitchy 0.3s ease 0.3s infinite;
+      }
+}
+.content__right {
+  font: 45px $font1;
+  color: rgb(19, 19, 19);
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: rgb(255, 255, 255);
+    & p {
+        transform: translateY(-50%);
+        top: 50%;
+        position: relative;
+        text-align: center;
+    }
+}
+.btn {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    text-align: center;
+  }
+  
+  .glitch {
+    position: relative;
+  
+    span {
+      display: block;
+    }
+    
+    span:nth-child(1),
+    span:nth-child(2) {
+      position: absolute;
+      left: 0;
+      top: 0;    
+    }
+    span:nth-child(1) {
+      color: #0ff;
+      z-index: -1;
+    }
+  
+    span:nth-child(2) {
+      color: #f0f;
+      z-index: -2;
+    }
+  
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes glitchy {
+    0% {
+      transform: translate(-2px, 2px);
+    }
+  
+    25% {
+      transform: translate(-2px, -2px);
+    }
+  
+    50% {
+      transform: translate(2px, 2px);
+    }
+  
+    75% {
+      transform: translate(2px, -2px);
+    }
+  
+    to {
+      transform: translate(-2px, 2px);
+    }
+  }
+
+.linear-wipe {
+  padding: 280px 0 280px 0;
+  &:hover {
+    transition: visibility 0s 3s, opacity 2s linear;
+    background: linear-gradient(to right, #0099f7 20%, #f11712 40%, #f11712 60%, #0099f7 80%);
+    background-size: 200% auto;   
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    @keyframes shine {
+      to {
+        visibility: visible;
+        transition: opacity 8s linear;
+        background-position: 200% center;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.menu2 {
+    margin-top: 30px;
+}
+.menu__2 {
+    text-align: center;
+    width: 100%;
+  }
+.menu__2__li {
+    display: block;
+    padding: 15px 56px;
+    border-right: 1px solid #184c61;
+    background: $blue;
+    font: 28px $font2;
+    color: #eeeeee;
+    text-transform: uppercase;
+    &--18 {
+        display: block;
+        padding: 6.5px 56px;
+        border-right: 1px solid #184c61;
+        background: $blue;
+        font: 18px $font1;
+        color: #eeeeee;
+        text-transform: uppercase;
+    }
+    &--24 {
+        display: block;
+        background: $blue;
+        font: 24px $font2;
+        color: #eeeeee;
+        text-transform: uppercase;
+    }
+}
+ul li a:hover {
+    background: rgba(0, 106, 179, 0.75)
+}
+ul li:hover {
+    background: rgba(0, 97, 161, 0.75)
+}
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    border-collapse: collapse;
+    border: 1px rgba(0, 0, 0, 0.12);
+    background-color: rgb(221, 230, 240);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.58);
+}
+td {
+    border: 1px solid #c2c9d1;
+}
+ul li:hover .submenu {
+    display: block;
+}
+.menu__2__h {
+    padding: 17px 0;
+    font: 16px $font2;
+    color: $blue;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.menu__2__types {
+    width: 290px;
+    padding: 19px 10px 10px 10px;    
+    font: 12px $font1;
+    color: $blue;
+    text-transform: uppercase;
+}
