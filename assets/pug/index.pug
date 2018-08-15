@@ -3,11 +3,24 @@ html
     include ./head
     body
         .content
-            a(href="#").content__left
+            .content__left
                 - var classes = ['btn', 'glitch']
-                div(class=classes)
-                    span WEB
-                    span WEB
-                    span WEB
-            a(href="#").content__right
-                    p.linear-wipe Design
+                a(href="/seosa" class=classes)
+                    span Bio
+                    span Bio
+                    span Bio
+                a(href="/ali-sayed" class=classes)
+                    span Ali Sayed
+                    span Ali Sayed
+                    span Ali Sayed
+                a(href="/edem" class=classes)
+                    span Edem
+                    span Edem
+                    span Edem
+                .content__left__social
+                    a(href="mailto:raevsanton@ya.ru")
+                        img(src="/assets/images/email.svg" style="width: 5%")
+                    a(href="tg://resolve?domain=raevsanton")
+                        img(src="/assets/images/telegram.svg" style="width: 5%")
+                    a(href="tel:+79272703773")
+                        img(src="/assets/images/telephone.svg" style="width: 5%")
