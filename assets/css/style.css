@@ -89,7 +89,7 @@ a {
     -webkit-box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
     box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
     margin-bottom: 100px;
-    width: 100%; }
+    width: auto; }
 
 .design__container {
   margin-top: -200px;
