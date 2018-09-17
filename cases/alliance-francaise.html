@@ -1,0 +1,22 @@
+
+<div class="design__container"><img class="content__close-design" src="/assets/images/close-black.svg"/>
+  <div class="design__title-up animated fadeInDown"><img src="/assets/images/logoaf.svg"/>
+    <div class="design__title--af">Alliance Francaise</div>
+    <div class="design__description">Moscow Dental Clinic </div>
+  </div><img class="design__img animated fadeInUp" src="/assets/images/af1.jpg"/><img class="design__img" src="/assets/images/af2.jpg"/><img class="design__img" src="/assets/images/af3.jpg"/><img class="design__img" src="/assets/images/af4.jpg"/><img class="design__img" src="/assets/images/af5.jpg" style="margin: -20px; padding-left: 3px;"/>
+</div>
+<script>
+  $(".content__close-design").click(function(){
+      var ajx=$.ajax({
+          url: "/cases/list.html",
+          cache: false,
+          success: function(html){
+              $(".content__right__list").html(html);
+          }
+      });       
+  });
+  
+  $(".content__close-design").click(function(){
+      $(".content__close-black").css({"display":"block"});
+  });
+</script>

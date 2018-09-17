@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="200" height="100" viewBox="850 440 180 120" style="white-space: pre;">
+    <style>
+@keyframes three_t { 0% { transform: translate(943.851552px,528.25853px) scale(1,1) translate(-12.373508px,-27.39653px); } 33.3333% { transform: translate(943.851552px,528.25853px) scale(1.15,1.15) translate(-12.373508px,-27.39653px); } 66.6666% { transform: translate(943.851552px,528.25853px) scale(1,1) translate(-12.373508px,-27.39653px); } 100% { transform: translate(943.851552px,528.25853px) scale(1,1) translate(-12.373508px,-27.39653px); } }
+@keyframes two_t { 0% { transform: translate(947.85803px,528.25594px) scale(1,1) translate(-6.74779px,-9.01558px); } 33.3333% { transform: translate(947.85803px,528.25594px) scale(1.2,1.2) translate(-6.74779px,-9.01558px); } 66.6666% { transform: translate(947.85803px,528.25594px) scale(1,1) translate(-6.74779px,-9.01558px); } 100% { transform: translate(947.85803px,528.25594px) scale(1,1) translate(-6.74779px,-9.01558px); } }
+@keyframes four_t { 0% { transform: translate(928.970161px,528.25594px) scale(1,1) translate(-6.748161px,-9.01558px); } 33.3333% { transform: translate(928.970161px,528.25594px) scale(1.2,1.2) translate(-6.748161px,-9.01558px); } 66.6666% { transform: translate(928.970161px,528.25594px) scale(1,1) translate(-6.748161px,-9.01558px); } 100% { transform: translate(928.970161px,528.25594px) scale(1,1) translate(-6.748161px,-9.01558px); } }
+@keyframes one_t { 0% { transform: translate(962.73828px,528.25853px) scale(1,1) translate(-12.37348px,-27.39653px); } 31.25% { transform: translate(962.73828px,528.25853px) scale(1.15,1.15) translate(-12.37348px,-27.39653px); } 62.5% { transform: translate(962.73828px,528.25853px) scale(1,1) translate(-12.37348px,-27.39653px); } 100% { transform: translate(962.73828px,528.25853px) scale(1,1) translate(-12.37348px,-27.39653px); } }
+    </style>
+    <g id="three" transform="translate(943.852,528.259) translate(-12.3735,-27.3965)" style="animation: three_t 1.5s linear 0.5s infinite both;">
+        <path id="Green2" fill="#4B8770" d="M14.6477,39.1379L6.612,28.4016L11.4316,21.9584L24.2879,39.1379L14.6477,39.1379" fill-rule="nonzero" stroke="none" stroke-width="1" transform="translate(-9.25604,0) scale(1.4,1.4)"/>
+        <path id="Green1" fill="#4B8770" d="M6.61146,10.7363L14.6471,0L24.2879,0L11.431,17.1795L6.61146,10.7363" fill-rule="nonzero" stroke="none" stroke-width="1" transform="translate(-9.25604,0) scale(1.4,1.4)"/>
+    </g>
+    <g id="two" transform="translate(947.858,528.256) translate(-6.74779,-9.01558)" style="animation: two_t 1.5s linear 0.2s infinite both;">
+        <path id="Orange2" fill="#EA862C" d="M13.4916,19.5705L18.3112,13.1274L23.1313,19.5705L18.3112,26.0068L13.4916,19.5705" fill-rule="nonzero" stroke="none" stroke-width="1" transform="translate(-18.8882,-18.3784) scale(1.4,1.4)"/>
+    </g>
+    <g id="four" transform="translate(928.97,528.256) translate(-6.74816,-9.01558)" style="animation: four_t 1.5s linear 0.6s infinite both;">
+        <path id="Orange1" fill="#EA862C" d="M0,19.5705L4.82011,13.1274L9.64023,19.5705L4.82011,26.0068L0,19.5705" fill-rule="nonzero" stroke="none" stroke-width="1" transform="translate(0,-18.3784) scale(1.4,1.4)"/>
+    </g>
+    <g id="one" transform="translate(962.738,528.259) translate(-12.3735,-27.3965)" style="animation: one_t 1.6s linear infinite both;">
+        <path id="Green4" fill="#4B8770" d="M28.1387,39.1379L20.1025,28.4016L24.9221,21.9584L37.7784,39.1379L28.1387,39.1379" fill-rule="nonzero" stroke="none" stroke-width="1" transform="translate(-28.1428,0) scale(1.4,1.4)"/>
+        <path id="Green3" fill="#4B8770" d="M20.102,10.7363L28.1377,0L37.7779,0L24.9216,17.1795L20.102,10.7363" fill-rule="nonzero" stroke="none" stroke-width="1" transform="translate(-28.1428,0) scale(1.4,1.4)"/>
+    </g>
+</svg>

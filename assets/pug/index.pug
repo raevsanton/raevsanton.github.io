@@ -1,0 +1,141 @@
+doctype html
+html
+    include ./head
+    body
+        .content
+            img.content__close-white(src="/assets/images/close-white.svg")
+            img.content__close-black(src="/assets/images/close-black.svg")
+            .content__left
+                - var classes = ['content__left__text', 'glitch']
+                div(class=classes)
+                    span Web
+                    span Web
+                    span Web
+                .content__left__list
+                    a(href="/cases/bio") Bio
+                    a(href="/cases/ali-sayed") Ali Sayed
+                    a(href="/cases/edem") Edem
+            .content__right
+                    p.content__right__text Design
+                    .content__right__list
+                        a.content__right__st Stomservice
+                        a.content__right__af Alliance Francaise
+                        a.content__right__ui UI
+    script.
+        
+        //Animation
+
+        $(".content__left").click(function(){
+            $(".content__right").css({"display":"none"});
+            $(".content__left").animate({"width":"100%"},800,function(){
+                $(".glitch").css({"display":"none"});
+                $(".content__left__list").fadeIn(1000);
+            });
+        });
+
+        $(".content__right").click(function(){
+            $(".glitch").css({"display":"none"});
+            $(".content__left").animate({
+                "overflow":"hidden",
+                "width":"0%"
+            }, 800,function(){
+                $(".content__right__text").css({"display":"none"});
+                $(".content__right__list").fadeIn(1000);
+            });
+        $(".content__right").animate({"width":"100%"},1000,function(){
+            }); 
+        });
+
+        //Ajax
+        
+        $(".content__right__st").click(function(){
+            var ajx=$.ajax({
+                url: "/cases/stomservice.html",
+                cache: false,
+                success: function(html){
+                    $(".content__right__list").html(html);
+                }
+            });
+            $(".content__close-design").css({"display":"block"});
+            $(".content__close-black").css({"display":"none"});
+        });
+
+        $(".content__right__af").click(function(){
+            var ajx=$.ajax({
+                url: "/cases/alliance-francaise.html",
+                cache: false,
+                success: function(html){
+                    $(".content__right__list").html(html);
+                }
+            });
+            $(".content__close-design").css({"display":"block"});
+            $(".content__close-black").css({"display":"none"});
+        });   
+        
+        $(".content__right__ui").click(function(){
+            var ajx=$.ajax({
+                url: "/cases/ui.html",
+                cache: false,
+                success: function(html){
+                    $(".content__right__list").html(html);
+                }
+            });
+            $(".content__close-design").css({"display":"block"});
+            $(".content__close-black").css({"display":"none"});
+        });
+
+        $('.content__right__list').on('click', function() {
+            return false;
+        });
+
+        //Close
+
+        var closewhite = $(".content__close-white").hide();
+        $(".content__left").click(function(){
+            $(closewhite).delay(800).animate({opacity: "show",},500);
+        });
+
+        $(".content__left").click(function(){
+            $(closewhite).css({"z-index":"2"});
+        });
+
+        $(closewhite).click(function(){
+            $(closewhite).css({"z-index":"0"});
+            $(".content__right").show({"display":"block"});
+            $(".content__left").animate({"width":"50%"},800,function(){
+                $(".glitch").css({"display":"inline-block"});
+                $(".content__left__list").hide(20);
+            });
+        });
+
+
+        var closeblack = $(".content__close-black");
+        $(".content__right").click(function(){
+            $(closeblack).delay(800).animate({opacity: "show",},500);
+        });
+
+        $(".content__right").click(function(){
+            $(closeblack).css({"z-index":"2"});
+        });
+
+        $(closeblack).click(function(){
+            $.ajax({
+                url: "/cases/list.html",
+                cache: false,
+                success: function(html){
+                    $(".content__right__list").html(html);
+                }
+            });
+            $(closeblack).css({"z-index":"0"});
+            $(".content__left").show({"display":"block"});
+            $(".content__left").animate({"width":"50%"},800);
+            $(".content__right").animate({"width":"50%"},800,function(){
+                $(".glitch").css({"display":"inline-block"});
+                $(".content__right__text").css({"display":"block"});
+                $(".content__right__list").hide(200);
+            });
+        });
+
+        $(".content__close-design").click(function(){
+            $(".content__close-black").css({"display":"block"});
+        });

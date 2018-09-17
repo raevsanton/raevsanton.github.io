@@ -1,0 +1,40 @@
+.content__right__list2
+    a.content__right__st Stomservice
+    a.content__right__af Alliance Francaise
+    a.content__right__ui UI
+script.
+    $(".content__right__st").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/stomservice.html",
+            cache: false,
+            success: function(html){
+                $(".content__right__list").html(html);
+            }
+        });
+        $(".content__close-design").css({"display":"block"});
+        $(".content__close-black").css({"display":"none"});
+    });
+
+    $(".content__right__af").click(function(){
+            var ajx=$.ajax({
+                url: "/cases/alliance-francaise.html",
+                cache: false,
+                success: function(html){
+                    $(".content__right__list").html(html);
+                }
+            });
+        $(".content__close-design").css({"display":"block"});
+        $(".content__close-black").css({"display":"none"});
+        });   
+
+    $(".content__right__ui").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/ui.html",
+            cache: false,
+            success: function(html){
+                $(".content__right__list").html(html);
+            }
+        });
+        $(".content__close-design").css({"display":"block"});
+        $(".content__close-black").css({"display":"none"});
+    });

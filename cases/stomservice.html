@@ -1,0 +1,32 @@
+<div class="design__container"><img class="content__close-design" src="/assets/images/close-black.svg"/>
+  <div class="design__title-up animated fadeInDown"><img src="/assets/images/sslogo.svg"/>
+    <div class="design__title--af">Stomservice</div>
+    <div class="design__description">Dental Clinic in Russia</div>
+  </div><img class="design__img animated fadeInUp" src="/assets/images/ss1.jpg"/><img class="design__img" src="/assets/images/ss2.jpg"/><img class="design__img" src="/assets/images/ss3.jpg"/>
+  <video autoplay="autoplay" loop="loop" data-src="/assets/images/stvideo.mp4" style="width: 75%; height: auto; margin: 0 auto; opacity:1; display:block;">
+    <source src="/assets/images/stvideo.webm" type="video/webm"/>
+  </video>
+  <video autoplay="autoplay" loop="loop" data-src="/assets/images/docs.mp4" style="width: 75%; height: auto; margin: 0 auto; opacity:1; display:block; padding-top:100px">
+    <source src="/assets/images/docs.webm" type="video/webm"/>
+  </video><img class="design__img" src="/assets/images/ss4.jpg"/><img class="design__img" src="/assets/images/ss5.jpg"/>
+  <div class="design__wrp" style="display: flex; flex-wrap: wrap; justify-content: center; padding-bottom: 100px">
+    <video autoplay="autoplay" loop="loop" data-src="/assets/images/mobile.mp4" style="width: auto; height: auto; opacity:1; display:block; padding-right:100px">
+      <source src="/assets/images/mobile.webm" type="video/webm"/>
+    </video><img class="design__img" style="width: auto" src="/assets/images/ss-mobile.jpg"/>
+  </div>
+</div>
+<script>
+  $(".content__close-design").click(function(){
+      var ajx=$.ajax({
+          url: "/cases/list.html",
+          cache: false,
+          success: function(html){
+              $(".content__right__list").html(html);
+          }
+      });       
+  });
+  
+  $(".content__close-design").click(function(){
+      $(".content__close-black").css({"display":"block"});
+  });
+</script>

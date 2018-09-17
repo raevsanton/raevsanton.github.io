@@ -1,0 +1,60 @@
+.header {
+    margin-top: 52px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__info {
+    text-align: right;
+}
+.header__telephone {
+    display: flex;
+    align-items: center;
+}
+.header__black {
+    font: 30px $font2;
+    color: $black;
+    margin-right: 14px;
+}
+.header__blue {
+    font: 40px $font2;
+    color: $blue;
+}
+.header__time {
+    font: 14px $font2;
+    color: $black;
+    margin-top: 14px;
+}
+.header__line {
+    width: 1px;
+    height: 111px;
+    background-color: #bec6cf;
+}
+.header__line {
+    margin-left: 80px;
+}
+.header__shop {
+    &:nth-child(-n+6) {
+        margin-top: 14px;
+    }
+}
+.header__img {
+    position: absolute;
+    margin: -20px 0px 0px 10px;
+}
+.text__blue {
+    font: 16px $font1;
+    color: $blue;
+    &:nth-child(n) {
+        padding: 5px 0;
+    }
+}
+.text__black {
+    font: 14px $font1;
+    color: $black2;
+    &:nth-child(n) {
+        padding: 6px 0;
+    }
+}

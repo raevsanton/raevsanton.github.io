@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anton Raevskiy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" data-n-head="true">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content"><img class="content__close-white" src="/assets/images/close-white.svg"><img class="content__close-black" src="/assets/images/close-black.svg">
+      <div class="content__left">
+        <div class="content__left__text glitch"><span>Web</span><span>Web</span><span>Web</span></div>
+        <div class="content__left__list"><a href="/cases/bio">Bio</a><a href="/cases/ali-sayed">Ali Sayed</a><a href="/cases/edem">Edem</a></div>
+      </div>
+      <div class="content__right">
+        <p class="content__right__text">Design</p>
+        <div class="content__right__list"><a class="content__right__st">Stomservice</a><a class="content__right__af">Alliance Francaise</a><a class="content__right__ui">UI</a></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    //Animation
+    
+    $(".content__left").click(function(){
+        $(".content__right").css({"display":"none"});
+        $(".content__left").animate({"width":"100%"},800,function(){
+            $(".glitch").css({"display":"none"});
+            $(".content__left__list").fadeIn(1000);
+        });
+    });
+    
+    $(".content__right").click(function(){
+        $(".glitch").css({"display":"none"});
+        $(".content__left").animate({
+            "overflow":"hidden",
+            "width":"0%"
+        }, 800,function(){
+            $(".content__right__text").css({"display":"none"});
+            $(".content__right__list").fadeIn(1000);
+        });
+    $(".content__right").animate({"width":"100%"},1000,function(){
+        }); 
+    });
+    
+    //Ajax
+    
+    $(".content__right__st").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/stomservice.html",
+            cache: false,
+            success: function(html){
+                $(".content__right__list").html(html);
+            }
+        });
+        $(".content__close-design").css({"display":"block"});
+        $(".content__close-black").css({"display":"none"});
+    });
+    
+    $(".content__right__af").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/alliance-francaise.html",
+            cache: false,
+            success: function(html){
+                $(".content__right__list").html(html);
+            }
+        });
+        $(".content__close-design").css({"display":"block"});
+        $(".content__close-black").css({"display":"none"});
+    });   
+    
+    $(".content__right__ui").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/ui.html",
+            cache: false,
+            success: function(html){
+                $(".content__right__list").html(html);
+            }
+        });
+        $(".content__close-design").css({"display":"block"});
+        $(".content__close-black").css({"display":"none"});
+    });
+    
+    $('.content__right__list').on('click', function() {
+        return false;
+    });
+    
+    //Close
+    
+    var closewhite = $(".content__close-white").hide();
+    $(".content__left").click(function(){
+        $(closewhite).delay(800).animate({opacity: "show",},500);
+    });
+    
+    $(".content__left").click(function(){
+        $(closewhite).css({"z-index":"2"});
+    });
+    
+    $(closewhite).click(function(){
+        $(closewhite).css({"z-index":"0"});
+        $(".content__right").show({"display":"block"});
+        $(".content__left").animate({"width":"50%"},800,function(){
+            $(".glitch").css({"display":"inline-block"});
+            $(".content__left__list").hide(20);
+        });
+    });
+    
+    
+    var closeblack = $(".content__close-black");
+    $(".content__right").click(function(){
+        $(closeblack).delay(800).animate({opacity: "show",},500);
+    });
+    
+    $(".content__right").click(function(){
+        $(closeblack).css({"z-index":"2"});
+    });
+    
+    $(closeblack).click(function(){
+        $.ajax({
+            url: "/cases/list.html",
+            cache: false,
+            success: function(html){
+                $(".content__right__list").html(html);
+            }
+        });
+        $(closeblack).css({"z-index":"0"});
+        $(".content__left").show({"display":"block"});
+        $(".content__left").animate({"width":"50%"},800);
+        $(".content__right").animate({"width":"50%"},800,function(){
+            $(".glitch").css({"display":"inline-block"});
+            $(".content__right__text").css({"display":"block"});
+            $(".content__right__list").hide(200);
+        });
+    });
+    
+    $(".content__close-design").click(function(){
+        $(".content__close-black").css({"display":"block"});
+    });
+  </script>
+</html>

@@ -1,0 +1,19 @@
+.menu__1 {
+  display: block;
+  width: 991px;
+  height: 41px;
+  &a:hover {
+    background: rgba(0, 106, 179, 0.75)
+  }
+}
+li {
+  float: left;
+}
+.menu__1 a {
+  display: block;
+  padding: 14px 20px;
+  border-right: 1px solid #237596;
+  background: #1fa5de;
+  font: 18px $font2;
+  color: #ffffff;
+}
