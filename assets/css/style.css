@@ -89,7 +89,7 @@ a {
     -webkit-box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
     box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
     margin-bottom: 100px;
-    width: auto; }
+    width: 100%; }
 
 .design__container {
   margin-top: -200px;
@@ -339,4 +339,9 @@ a {
 
 @media (min-width: 1681px) {
   .design__img--shadow {
+    width: auto; }
+  .design__img--last {
+    -webkit-box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
+    margin-bottom: 100px;
     width: auto; } }
