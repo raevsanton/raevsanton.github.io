@@ -1240,7 +1240,6 @@ input {
 
 @media (max-width: 480px) {
   .main-screen {
-    background: url("/edem/assets/images/1.jpg") no-repeat;
     height: 292px;
     width: 100%; }
   .main-screen .container {
