@@ -1,0 +1,26 @@
+
+<div class="design__container"><img class="content__close-design" src="/assets/images/close-black.svg"/>
+  <div class="design__title-up">
+    <div class="design__title">Filter for products</div>
+    <div class="design__description">In online store</div>
+  </div><img class="design__img--shadow" src="/assets/images/ui1.png"/>
+  <div class="design__title--padding">Aeroflot</div>
+  <div class="design__description">Dashboard panel for admins</div><img class="design__img--shadow" src="/assets/images/ui2.jpg"/>
+  <div class="design__title--padding">Mestovik</div>
+  <div class="design__description">Navigation of places</div><img class="design__img--last" src="/assets/images/ui3.jpg"/>
+</div>
+<script>
+  $(".content__close-design").click(function(){
+      var ajx=$.ajax({
+          url: "/cases/list.html",
+          cache: false,
+          success: function(html){
+              $(".content__right__list").html(html);
+          }
+      });       
+  });
+  
+  $(".content__close-design").click(function(){
+      $(".content__close-black").css({"display":"block"});
+  });
+</script>

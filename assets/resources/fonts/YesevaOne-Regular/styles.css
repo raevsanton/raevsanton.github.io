@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'YesevaOne-Regular';
-  src: url('YesevaOne-Regular.woff') format('woff');
+  src: url('YesevaOne-Regular.woff2') format('woff2'), url('YesevaOne-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

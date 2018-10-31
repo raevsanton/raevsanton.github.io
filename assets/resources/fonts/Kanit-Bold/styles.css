@@ -1,7 +1,6 @@
-
 @font-face {
   font-family: 'Kanit-Bold';
-  src: url('Kanit-Bold.woff') format('woff');
+  src: url('Kanit-Bold.woff2') format('woff2'), url('Kanit-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
