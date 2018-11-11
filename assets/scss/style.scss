@@ -14,9 +14,9 @@
     height: 100%;
     position: relative;
     text-align: center;
-    background-color: #252525;
     float: left;
     cursor: pointer;
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
       &:hover:before,
       &:hover span:nth-child(1) {
         visibility: visible;
@@ -31,7 +31,7 @@
 
 .content__right {
   font: 45px $font1;
-  color: #252525;
+  color: #231557;
   width: 50%;
   height: 100%;
   float: right;
@@ -114,10 +114,10 @@
   }
 
 .content__right__text {
-  padding: 280px 0 280px 0;
+  padding: 255px 0;
   &:hover {
     transition: visibility 0s 3s, opacity 2s linear;
-    background: linear-gradient(to right, #0099f7 20%, #f11712 40%, #f11712 60%, #0099f7 80%);
+    background: linear-gradient(to right, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
     background-size: 200% auto;
     color: #000;
     background-clip: text;
@@ -149,7 +149,7 @@
     color: #fff;
     transition-duration: 0.4s;
     &:hover {
-      color: #929292;
+      color: #8e52e0;
       transition-duration: 0.4s;
     }
   }

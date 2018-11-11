@@ -105,9 +105,11 @@ a {
   height: 100%;
   position: relative;
   text-align: center;
-  background-color: #252525;
   float: left;
-  cursor: pointer; }
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(315deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  background-image: -o-linear-gradient(315deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
   .content__left:hover:before,
   .content__left:hover span:nth-child(1) {
     visibility: visible;
@@ -120,7 +122,7 @@ a {
 
 .content__right {
   font: 45px "YesevaOne-Regular";
-  color: #252525;
+  color: #231557;
   width: 50%;
   height: 100%;
   float: right;
@@ -205,15 +207,15 @@ a {
     transform: translate(-2px, 2px); } }
 
 .content__right__text {
-  padding: 280px 0 280px 0; }
+  padding: 255px 0; }
   .content__right__text:hover {
     -webkit-transition: visibility 0s 3s, opacity 2s linear;
     -o-transition: visibility 0s 3s, opacity 2s linear;
     transition: visibility 0s 3s, opacity 2s linear;
-    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #0099f7), color-stop(40%, #f11712), color-stop(60%, #f11712), color-stop(80%, #0099f7));
-    background: -webkit-linear-gradient(left, #0099f7 20%, #f11712 40%, #f11712 60%, #0099f7 80%);
-    background: -o-linear-gradient(left, #0099f7 20%, #f11712 40%, #f11712 60%, #0099f7 80%);
-    background: linear-gradient(to right, #0099f7 20%, #f11712 40%, #f11712 60%, #0099f7 80%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #231557), color-stop(40%, #495bff), color-stop(60%, #495bff), color-stop(80%, #231557));
+    background: -webkit-linear-gradient(left, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
+    background: -o-linear-gradient(left, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
+    background: linear-gradient(to right, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
     background-size: 200% auto;
     color: #000;
     background-clip: text;
@@ -261,7 +263,7 @@ a {
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s; }
     .content__left__list a:hover {
-      color: #929292;
+      color: #8e52e0;
       -webkit-transition-duration: 0.4s;
       -o-transition-duration: 0.4s;
       transition-duration: 0.4s; }
