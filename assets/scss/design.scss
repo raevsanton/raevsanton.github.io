@@ -33,6 +33,7 @@
 }
 
 .design__title {
+  padding-top: 70px;
   font: 35px $font1;
   color: #252525;
   text-align: center;
@@ -57,6 +58,7 @@
   &--shadow {
     box-shadow: 0px 4px 76px 5px rgba(0,0,0,0.17);
     width: 100%;
+    margin-bottom: 100px;
   }
   &--last {
     box-shadow: 0px 4px 76px 5px rgba(0,0,0,0.17);
