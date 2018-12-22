@@ -1,5 +1,5 @@
-.content__close-white,
-.content__close-black {
+.content__close--white,
+.content__close--black {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -15,7 +15,7 @@
   }
 }
 
-.content__close-design {
+.content__close--design {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -32,6 +32,13 @@
   }
 }
 
+.design__wrp {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+  padding-bottom: 100px;
+}
+
 .design__title {
   padding-top: 70px;
   font: 35px $font1;
@@ -41,11 +48,13 @@
   &--af {
     padding-top: 25px;
     font: 35px $font1;
+    color: #252525;
   }
   &--padding {
     padding-top: 150px;
   }
 }
+
 .design__description {
   font: 15px $font3;
   color: #252525;
@@ -71,4 +80,12 @@
   margin-top: -200px;
   padding: 0 130px;
   cursor: auto;
+}
+
+video {
+  width: 75%; 
+  height: auto; 
+  margin: 0 auto; 
+  opacity:1; 
+  display:block;
 }

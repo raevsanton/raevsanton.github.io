@@ -3,21 +3,21 @@ html
     include ./head
     body
         .content
-            img.content__close-white(src="/assets/images/close-white.svg")
-            img.content__close-black(src="/assets/images/close-black.svg")
+            img.content__close--white(src="/assets/images/close-white.svg")
+            img.content__close--black(src="/assets/images/close-black.svg")
             .content__left
-                - var classes = ['content__left__text', 'glitch']
-                p(class=classes)
+                - var classes = ['content__left--text', 'glitch']
+                h1(class=classes)
                     span Web
                     span Web
                     span Web
-                .content__left__list
+                .content__left--list
                     a(href="/cases/bio" target="_blank") Bio
                     a(href="/cases/ali-sayed" target="_blank") Ali Sayed
                     a(href="/cases/edem" target="_blank") Edem
             .content__right
-                    p.content__right__text Design
-                    .content__right__list
-                        a.content__right__st Stomservice
-                        a.content__right__af Alliance Francaise
-                        a.content__right__ui UI
+                    h1.content__right--text Design
+                    .content__right--list
+                        a.content__right--st Stomservice
+                        a.content__right--af Alliance Francaise
+                        a.content__right--ui UI

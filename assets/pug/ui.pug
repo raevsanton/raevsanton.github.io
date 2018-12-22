@@ -1,26 +1,26 @@
 .design__container
-    img.content__close-design(src="/assets/images/close-black.svg")
-    .design__title-up.animated.fadeInDown
-        .design__title Filter for products
-        .design__description In online store
+    img.content__close--design(src="/assets/images/close-black.svg")
+    .design__title--up.animated.fadeInDown
+        h2.design__title Filter for products
+        p.design__description In online store
     img.design__img--shadow.animated.fadeInUp(src="/assets/images/ui1.png")
-    .design__title Aeroflot
-    .design__description Dashboard panel for admins
+    h2.design__title Aeroflot
+    p.design__description Dashboard panel for admins
     img.design__img--shadow(src="/assets/images/ui2.jpg")
-    .design__title Mestovik
-    .design__description Navigation of places
+    h2.design__title Mestovik
+    p.design__description Navigation of places
     img.design__img--last(src="/assets/images/ui3.jpg")
 script.
-    $(".content__close-design").click(function(){
+    $(".content__close--design").click(function(){
         var ajx=$.ajax({
             url: "/cases/list.html",
             cache: false,
             success: function(html){
-                $(".content__right__list").html(html);
+                $(".content__right--list").html(html);
             }
         });       
     });
 
-    $(".content__close-design").click(function(){
-        $(".content__close-black").css({"display":"block"});
+    $(".content__close--design").click(function(){
+        $(".content__close--black").css({"display":"block"});
     });

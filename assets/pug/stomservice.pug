@@ -1,33 +1,33 @@
 .design__container
-    img.content__close-design(src="/assets/images/close-black.svg")
-    .design__title-up.animated.fadeInDown
+    img.content__close--design(src="/assets/images/close-black.svg")
+    .design__title--up.animated.fadeInDown
         img(src="/assets/images/sslogo.svg")    
-        .design__title--af Stomservice
-        .design__description Dental Clinic in Russia
+        h2.design__title--af Stomservice
+        p.design__description Dental Clinic in Russia
     img.design__img.animated.fadeInUp(src="/assets/images/ss1.jpg")
     img.design__img(src="/assets/images/ss2.jpg")
     img.design__img(src="/assets/images/ss3.jpg")
-    video(autoplay loop data-src="/assets/images/stvideo.mp4" style="width: 75%; height: auto; margin: 0 auto; opacity:1; display:block;")
+    video(autoplay loop data-src="/assets/images/stvideo.mp4")
         source(src="/assets/images/stvideo.webm" type="video/webm")
-    video(autoplay loop data-src="/assets/images/docs.mp4" style="width: 75%; height: auto; margin: 0 auto; opacity:1; display:block; padding-top:100px")
+    video(autoplay loop data-src="/assets/images/docs.mp4" style="padding-top:100px")
         source(src="/assets/images/docs.webm" type="video/webm")
     img.design__img(src="/assets/images/ss4.jpg")
     img.design__img(src="/assets/images/ss5.jpg")
-    .design__wrp(style="display: flex; flex-wrap: wrap; justify-content: center; padding-bottom: 100px")
-        video(autoplay loop data-src="/assets/images/mobile.mp4" style="width: auto; height: auto; opacity:1; display:block; padding-right:100px")
+    .design__wrp
+        video(autoplay loop data-src="/assets/images/mobile.mp4" style="width: 300px; margin: 0;")
             source(src="/assets/images/mobile.webm" type="video/webm")
         img.design__img(style="width: auto" src="/assets/images/ss-mobile.jpg")
 script.
-    $(".content__close-design").click(function(){
+    $(".content__close--design").click(function(){
         var ajx=$.ajax({
             url: "/cases/list.html",
             cache: false,
             success: function(html){
-                $(".content__right__list").html(html);
+                $(".content__right--list").html(html);
             }
         });       
     });
 
-    $(".content__close-design").click(function(){
-        $(".content__close-black").css({"display":"block"});
+    $(".content__close--design").click(function(){
+        $(".content__close--black").css({"display":"block"});
     });

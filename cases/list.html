@@ -1,39 +1,39 @@
 
-<div class="content__right__list2"><a class="content__right__st">Stomservice</a><a class="content__right__af">Alliance Francaise</a><a class="content__right__ui">UI</a></div>
+<div class="content__right--list2"><a class="content__right--st">Stomservice</a><a class="content__right--af">Alliance Francaise</a><a class="content__right--ui">UI</a></div>
 <script>
-  $(".content__right__st").click(function(){
+  $(".content__right--st").click(function(){
       var ajx=$.ajax({
           url: "/cases/stomservice.html",
           cache: false,
           success: function(html){
-              $(".content__right__list").html(html);
+              $(".content__right--list").html(html);
           }
       });
-      $(".content__close-design").css({"display":"block"});
-      $(".content__close-black").css({"display":"none"});
+      $(".content__close--design").css({"display":"block"});
+      $(".content__close--black").css({"display":"none"});
   });
   
-  $(".content__right__af").click(function(){
+  $(".content__right--af").click(function(){
           var ajx=$.ajax({
               url: "/cases/alliance-francaise.html",
               cache: false,
               success: function(html){
-                  $(".content__right__list").html(html);
+                  $(".content__right--list").html(html);
               }
           });
-      $(".content__close-design").css({"display":"block"});
-      $(".content__close-black").css({"display":"none"});
+      $(".content__close--design").css({"display":"block"});
+      $(".content__close--black").css({"display":"none"});
       });   
   
-  $(".content__right__ui").click(function(){
+  $(".content__right--ui").click(function(){
       var ajx=$.ajax({
           url: "/cases/ui.html",
           cache: false,
           success: function(html){
-              $(".content__right__list").html(html);
+              $(".content__right--list").html(html);
           }
       });
-      $(".content__close-design").css({"display":"block"});
-      $(".content__close-black").css({"display":"none"});
+      $(".content__close--design").css({"display":"block"});
+      $(".content__close--black").css({"display":"none"});
   });
 </script>

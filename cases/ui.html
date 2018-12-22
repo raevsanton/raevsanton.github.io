@@ -1,26 +1,26 @@
 
-<div class="design__container"><img class="content__close-design" src="/assets/images/close-black.svg"/>
-  <div class="design__title-up animated fadeInDown">
-    <div class="design__title">Filter for products</div>
-    <div class="design__description">In online store</div>
+<div class="design__container"><img class="content__close--design" src="/assets/images/close-black.svg"/>
+  <div class="design__title--up animated fadeInDown">
+    <h2 class="design__title">Filter for products</h2>
+    <p class="design__description">In online store</p>
   </div><img class="design__img--shadow animated fadeInUp" src="/assets/images/ui1.png"/>
-  <div class="design__title">Aeroflot</div>
-  <div class="design__description">Dashboard panel for admins</div><img class="design__img--shadow" src="/assets/images/ui2.jpg"/>
-  <div class="design__title">Mestovik</div>
-  <div class="design__description">Navigation of places</div><img class="design__img--last" src="/assets/images/ui3.jpg"/>
+  <h2 class="design__title">Aeroflot</h2>
+  <p class="design__description">Dashboard panel for admins</p><img class="design__img--shadow" src="/assets/images/ui2.jpg"/>
+  <h2 class="design__title">Mestovik</h2>
+  <p class="design__description">Navigation of places</p><img class="design__img--last" src="/assets/images/ui3.jpg"/>
 </div>
 <script>
-  $(".content__close-design").click(function(){
+  $(".content__close--design").click(function(){
       var ajx=$.ajax({
           url: "/cases/list.html",
           cache: false,
           success: function(html){
-              $(".content__right__list").html(html);
+              $(".content__right--list").html(html);
           }
       });       
   });
   
-  $(".content__close-design").click(function(){
-      $(".content__close-black").css({"display":"block"});
+  $(".content__close--design").click(function(){
+      $(".content__close--black").css({"display":"block"});
   });
 </script>
