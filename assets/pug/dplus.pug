@@ -1,0 +1,22 @@
+.design__container
+    img.content__close--design(src="/assets/images/close-black.svg")
+    .design__title--up.animated.fadeInDown
+        img(src="/assets/images/dplogo.jpg")
+        h2.design__title--af  Dental +
+        p.design__description Dental Clinic 
+    img.design__img.animated.fadeInUp(src="/assets/images/dplus1.jpg")
+    img.design__img(src="/assets/images/dplus2.jpg")
+script.
+    $(".content__close--design").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/list.html",
+            cache: false,
+            success: function(html){
+                $(".content__right--list").html(html);
+            }
+        });       
+    });
+
+    $(".content__close--design").click(function(){
+        $(".content__close--black").css({"display":"block"});
+    });

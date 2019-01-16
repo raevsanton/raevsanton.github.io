@@ -129,6 +129,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 3s linear infinite;
+    -moz-animation: shine 3s linear infinite;
     @keyframes shine {
       to {
         visibility: visible;

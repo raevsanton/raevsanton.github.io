@@ -2,14 +2,20 @@ $(document).ready(function() {
     $(".content__left").click(function() {
         $(".content__right").css({
             display: "none"
-        }), $(".content__left").animate({
+        }), 
+
+        $(".content__left").animate({
             width: "100%"
-        }, 800, function() {
+        }, 800, function() {   
             $(".glitch").css({
-                display: "none"
-            }), $(".content__left--list").fadeIn(1e3)
-        })
-    }), $(".content__right").click(function() {
+                    display: "none"
+            }), 
+
+            $(".content__left--list").fadeIn(1e3)
+            })
+        }), 
+
+    $(".content__right").click(function() {
         $(".glitch").css({
             display: "none"
         }), $(".content__left").animate({
@@ -19,10 +25,15 @@ $(document).ready(function() {
             $(".content__right--text").css({
                 display: "none"
             }), $(".content__right--list").fadeIn(1e3)
-        }), $(".content__right").animate({
+        }), 
+
+    $(".content__right").animate({
             width: "100%"
         }, 1e3, function() {})
-    }), $(".content__right--st").click(function() {
+    }), 
+
+
+    $(".content__right--st").click(function() {
         $.ajax({
             url: "/cases/stomservice.html",
             cache: !1,
@@ -35,7 +46,9 @@ $(document).ready(function() {
         }), $(".content__close--black").css({
             display: "none"
         })
-    }), $(".content__right--af").click(function() {
+    }), 
+
+    $(".content__right--af").click(function() {
         $.ajax({
             url: "/cases/alliance-francaise.html",
             cache: !1,
@@ -48,7 +61,9 @@ $(document).ready(function() {
         }), $(".content__close--black").css({
             display: "none"
         })
-    }), $(".content__right--ui").click(function() {
+    }), 
+
+    $(".content__right--ui").click(function() {
         $.ajax({
             url: "/cases/ui.html",
             cache: !1,
@@ -61,7 +76,25 @@ $(document).ready(function() {
         }), $(".content__close--black").css({
             display: "none"
         })
-    }), $(".content__right--list").on("click", function() {
+    }), 
+
+    $(".content__right--dp").click(function() {
+        $.ajax({
+            url: "/cases/dplus.html",
+            cache: !1,
+            success: function(t) {
+                $(".content__right--list").html(t)
+            }
+        });
+        $(".content__close--design").css({
+            display: "block"
+        }), $(".content__close--black").css({
+            display: "none"
+        })
+    }), 
+
+
+    $(".content__right--list").on("click", function() {
         return !1
     });
     var t = $(".content__close--white").hide();
