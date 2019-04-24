@@ -1,12 +1,13 @@
 .design__container
     img.content__close--design(src="/assets/images/close-black.svg")
     .design__title--up.animated.fadeInDown
-        img(src="/assets/images/dplogo.jpg")
-        h2.design__title--af  Dental +
-        p.design__description Dental Clinic 
-    img.design__img.animated.fadeInUp(src="/assets/images/dplus1.jpg")
-    img.design__img(src="/assets/images/dplus2.jpg")
-    img.design__img(src="/assets/images/dplus3.jpg")
+        h2.design__title Mango
+    .design__svg
+        img.design__img.animated.fadeInUp(src="/assets/images/mango1.svg" style="width: 200px")
+    img.design__img.animated.fadeInUp(src="/assets/images/mango1.jpg")
+    .design__svg
+        img.design__img.animated.fadeInUp(src="/assets/images/mango2.svg" style="width: 200px")
+    img.design__img(src="/assets/images/mango2.jpg")
 script.
     $(".content__close--design").click(function(){
         var ajx=$.ajax({

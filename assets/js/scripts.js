@@ -93,6 +93,21 @@ $(document).ready(function() {
         })
     }), 
 
+    $(".content__right--lg").click(function() {
+        $.ajax({
+            url: "/cases/logotypes.html",
+            cache: !1,
+            success: function(t) {
+                $(".content__right--list").html(t)
+            }
+        });
+        $(".content__close--design").css({
+            display: "block"
+        }), $(".content__close--black").css({
+            display: "none"
+        })
+    }), 
+
 
     $(".content__right--list").on("click", function() {
         return !1

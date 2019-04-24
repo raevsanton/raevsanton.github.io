@@ -3,6 +3,7 @@
     a.content__right--af Alliance Francaise
     a.content__right--dp Dental +
     a.content__right--ui UI
+    a.content__right--lg Logotypes
 script.
     $(".content__right--st").click(function(){
         var ajx=$.ajax({
@@ -43,6 +44,18 @@ script.
     $(".content__right--dp").click(function(){
         var ajx=$.ajax({
             url: "/cases/dplus.html",
+            cache: false,
+            success: function(html){
+                $(".content__right--list").html(html);
+            }
+        });
+        $(".content__close--design").css({"display":"block"});
+        $(".content__close--black").css({"display":"none"});
+    });
+
+    $(".content__right--lg").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/logotypes.html",
             cache: false,
             success: function(html){
                 $(".content__right--list").html(html);

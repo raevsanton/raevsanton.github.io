@@ -1,5 +1,5 @@
 
-<div class="content__right--list2"><a class="content__right--st">Stomservice</a><a class="content__right--af">Alliance Francaise</a><a class="content__right--dp">Dental +</a><a class="content__right--ui">UI</a></div>
+<div class="content__right--list2"><a class="content__right--st">Stomservice</a><a class="content__right--af">Alliance Francaise</a><a class="content__right--dp">Dental +</a><a class="content__right--ui">UI</a><a class="content__right--lg">Logotypes</a></div>
 <script>
   $(".content__right--st").click(function(){
       var ajx=$.ajax({
@@ -40,6 +40,18 @@
   $(".content__right--dp").click(function(){
       var ajx=$.ajax({
           url: "/cases/dplus.html",
+          cache: false,
+          success: function(html){
+              $(".content__right--list").html(html);
+          }
+      });
+      $(".content__close--design").css({"display":"block"});
+      $(".content__close--black").css({"display":"none"});
+  });
+  
+  $(".content__right--lg").click(function(){
+      var ajx=$.ajax({
+          url: "/cases/logotypes.html",
           cache: false,
           success: function(html){
               $(".content__right--list").html(html);
