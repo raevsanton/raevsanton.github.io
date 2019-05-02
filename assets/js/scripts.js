@@ -178,4 +178,10 @@ $(document).ready(function() {
             display: "none"
         })
     })
+
+    // $(".content__contacts").hover(function() {
+    //     $(".content__open").css({
+    //         float: "right"
+    //     })
+    // })
 });
