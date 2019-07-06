@@ -119,6 +119,9 @@ a {
   padding: 0 130px;
   cursor: auto; }
 
+.design__video {
+  width: auto; }
+
 video {
   width: 75%;
   height: auto;
@@ -371,9 +374,9 @@ h1 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font: 35px "YesevaOne-Regular";
+    font: 32px "YesevaOne-Regular";
     color: #252525;
-    margin-top: 15px;
+    margin-top: 10px;
     -webkit-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s; }
@@ -453,7 +456,9 @@ h1 {
     font: 35px "YesevaOne-Regular";
     color: #252525; }
   .design__img {
-    width: 100%; } }
+    width: 100%; }
+  .design__video {
+    width: 75%; } }
 
 @media (min-width: 480px) and (max-width: 768px) {
   .design__container {
@@ -468,7 +473,9 @@ h1 {
   .design__img {
     width: 100%; }
   .design__title--up {
-    margin-top: 142px; } }
+    margin-top: 142px; }
+  .design__video {
+    width: 75%; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .content__close--design {
@@ -476,7 +483,9 @@ h1 {
   .design__title--af {
     padding-top: 15px;
     font: 35px "YesevaOne-Regular";
-    color: #252525; } }
+    color: #252525; }
+  .design__video {
+    width: 75%; } }
 
 @media (min-width: 1024px) and (max-width: 1681px) {
   .content__close--design {
@@ -496,5 +505,5 @@ h1 {
     box-shadow: 0px 4px 76px 5px rgba(0, 0, 0, 0.17);
     margin-bottom: 100px;
     width: auto; }
-  video {
+  .design__img--border {
     width: auto; } }

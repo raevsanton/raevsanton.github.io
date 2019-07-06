@@ -5,12 +5,12 @@
         h2.design__title--af ODRI
         p.design__description Fashion Internet Store
     img.design__img.animated.fadeInUp(src="/assets/images/od1.jpg")
-    video.design__img--border(autoplay loop controlsList="nofullscreen nodownload" data-src="/assets/images/odri.mp4" style="margin-top:50px")
+    video(autoplay loop controlsList="nofullscreen nodownload" data-src="/assets/images/odri.mp4" style="margin-top:50px")
         source(src="/assets/images/odri.mp4" type="video/webm")
     img.design__img--border(src="/assets/images/od2.jpg" style="margin-top:50px")
     img.design__img--border(src="/assets/images/od3.jpg" style="margin-top:50px")
     img.design__img--border(src="/assets/images/od4.jpg" style="margin-top:50px")
-    video(autoplay loop controlsList="nofullscreen nodownload" data-src="/assets/images/mobile3.mp4")
+    video.design__video(autoplay loop controlsList="nofullscreen nodownload" data-src="/assets/images/mobile3.mp4")
         source(src="/assets/images/mobile3.mp4" type="video/webm")
 script.
     $(".content__close--design").click(function(){
