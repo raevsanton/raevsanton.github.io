@@ -108,6 +108,36 @@ $(document).ready(function() {
         })
     }), 
 
+    $(".content__right--od").click(function() {
+        $.ajax({
+            url: "/cases/odri.html",
+            cache: !1,
+            success: function(t) {
+                $(".content__right--list").html(t)
+            }
+        });
+        $(".content__close--design").css({
+            display: "block"
+        }), $(".content__close--black").css({
+            display: "none"
+        })
+    }), 
+
+    $(".content__right--ot").click(function() {
+        $.ajax({
+            url: "/cases/others.html",
+            cache: !1,
+            success: function(t) {
+                $(".content__right--list").html(t)
+            }
+        });
+        $(".content__close--design").css({
+            display: "block"
+        }), $(".content__close--black").css({
+            display: "none"
+        })
+    }), 
+
 
     $(".content__right--list").on("click", function() {
         return !1
@@ -178,10 +208,4 @@ $(document).ready(function() {
             display: "none"
         })
     })
-
-    // $(".content__contacts").hover(function() {
-    //     $(".content__open").css({
-    //         float: "right"
-    //     })
-    // })
 });

@@ -1,9 +1,11 @@
 .content__right--list2
     a.content__right--st Stomservice
+    a.content__right--od ODRI
     a.content__right--af Alliance Francaise
     a.content__right--dp Dental +
     a.content__right--ui UI
     a.content__right--lg Logotypes
+    a.content__right--ot Others
 script.
     $(".content__right--st").click(function(){
         var ajx=$.ajax({
@@ -56,6 +58,30 @@ script.
     $(".content__right--lg").click(function(){
         var ajx=$.ajax({
             url: "/cases/logotypes.html",
+            cache: false,
+            success: function(html){
+                $(".content__right--list").html(html);
+            }
+        });
+        $(".content__close--design").css({"display":"block"});
+        $(".content__close--black").css({"display":"none"});
+    });
+
+    $(".content__right--od").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/odri.html",
+            cache: false,
+            success: function(html){
+                $(".content__right--list").html(html);
+            }
+        });
+        $(".content__close--design").css({"display":"block"});
+        $(".content__close--black").css({"display":"none"});
+    });
+
+    $(".content__right--ot").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/others.html",
             cache: false,
             success: function(html){
                 $(".content__right--list").html(html);

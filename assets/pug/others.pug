@@ -1,0 +1,21 @@
+.design__container
+    img.content__close--design(src="/assets/images/close-black.svg")
+    .design__title--up.animated.fadeInDown
+        h2.design__title--af Others
+        p.design__description 
+    img.design__img--border.animated.fadeInUp(src="/assets/images/other.jpg")
+    img.design__img(src="/assets/images/a-muse.gif")
+script.
+    $(".content__close--design").click(function(){
+        var ajx=$.ajax({
+            url: "/cases/list.html",
+            cache: false,
+            success: function(html){
+                $(".content__right--list").html(html);
+            }
+        });       
+    });
+
+    $(".content__close--design").click(function(){
+        $(".content__close--black").css({"display":"block"});
+    });
