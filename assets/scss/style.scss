@@ -66,7 +66,7 @@ h1 {
     text-align: center;
     float: left;
     cursor: pointer;
-    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+    background-image: linear-gradient(-225deg, rgb(172, 50, 228) 0%, rgb(121, 24, 242) 48%, rgb(72, 0, 255) 100%);
       &:hover:before,
       &:hover span:nth-child(1) {
         visibility: visible;

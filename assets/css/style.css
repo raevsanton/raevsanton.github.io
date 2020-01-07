@@ -200,9 +200,9 @@ h1 {
   text-align: center;
   float: left;
   cursor: pointer;
-  background-image: -webkit-linear-gradient(315deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
-  background-image: -o-linear-gradient(315deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
-  background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); }
+  background-image: -webkit-linear-gradient(315deg, #ac32e4 0%, #7918f2 48%, #4800ff 100%);
+  background-image: -o-linear-gradient(315deg, #ac32e4 0%, #7918f2 48%, #4800ff 100%);
+  background-image: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4800ff 100%); }
   .content__left:hover:before,
   .content__left:hover span:nth-child(1) {
     visibility: visible;
