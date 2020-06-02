@@ -1,6 +1,7 @@
 $(document).ready(function () {
+	//Anchors
 	$("a[href]").on("click", function (e) {
-		var anchor = $(this);
+		let anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top
 		}, 777);
@@ -8,6 +9,7 @@ $(document).ready(function () {
 		return false;
 	});
 
+	//Slider
 	$('.responsive').slick({
 		dots: true,
 		infinite: false,
@@ -38,9 +40,26 @@ $(document).ready(function () {
 		}]
 	});
 
+	//Fixed menu
 	$(function (f) {
 		$(window).scroll(function () {
 			$('header')[($(this).scrollTop() > 55 ? "add" : "remove") + "Class"]("bar_fixed");
 		});
 	});
+
+	//Burger menu
+	$("body").on('click', '.top', function() {
+		$("nav.menu").toggleClass("menu_show");
+	});
+	let toggles = document.querySelectorAll(".cmn-toggle-switch");
+	for (let i = toggles.length - 1; i >= 0; i--) {
+		let toggle = toggles[i];
+		toggleHandler(toggle);
+	}
+	function toggleHandler(toggle) {
+		toggle.addEventListener( "click", function(e) {
+			e.preventDefault();
+			(this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+		});
+	}
 });

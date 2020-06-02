@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Spirit8</title>
-    <link href="/cases/spirit8/css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/cases/spirit8/js/index.js"></script>
-    <script src="/cases/spirit8/js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slick.min.js"></script>
   </head>
   <body>
     <header>
+      <div class="top"><a class="menu_icon"><i>
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx"><span></span></button></i></a></div>
+      <nav class="menu"><a class="item_menu" href="#about">About</a><a class="item_menu" href="#team">Team</a><a class="item_menu" href="#services">Services</a><a class="item_menu" href="#clients">Clients</a><a class="item_menu" href="#contact">Contact</a></nav>
       <div class="container">
-        <div class="header__wrp"><a class="logo" href="index.html">SPIRIT8</a>
-          <nav>
+        <div class="header__wrp"><a class="logo" href="#">SPIRIT8</a>
+          <nav class="menu__main">
             <ul>
-              <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#services">Services</a></li>
@@ -28,62 +37,61 @@
     </header>
     <section class="banner">
       <div class="container">
-        <h1>Welcome on <strong class="bold-h1">spirit8</strong></h1>
-        <p class="text-main">We are a digital agency with <strong class="bold-text">years of experience</strong> and with <strong class="bold-text">extraordinary people</strong></p><a class="mouse-icon" href="#about"><img class="arrow" src="images/arrow.svg"></a>
+        <h1>Welcome on<strong class="bold-h1"> spirit8</strong></h1>
+        <p class="text-main">We are a digital agency with years of experience and with extraordinary people</p><a class="mouse-icon" href="#about"><img class="arrow" src="./images/arrow.svg"></a>
       </div>
     </section>
     <section id="about">
       <div class="container">
-        <div class="img__text--wrp"><img class="img-responsive" src="images/mac.png">
-          <div class="text__wrp">
-            <h4 class="text-block1">About us</h4>
-            <h2 class="text-block">Some words <strong class="bold-h2">about us</strong></h2>
-            <div class="blockquote--double"></div>
-            <p class="text">We love building and rebuilding brands through our specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
-            <ul class="home-list">
-              <li><img class="svg" src="images/li.svg"><strong class="main-bold">Mission - </strong><em class="italic">We deliver uniqueness and quality</em></li>
-              <li><img class="svg" src="images/li.svg"><strong class="main-bold">Skills - </strong><em class="italic">Delivering fast and excellent results</em></li>
-              <li><img class="svg" src="images/li.svg"><strong class="main-bold">Clients - </strong><em class="italic">Satisfied clients thanks to our experience</em></li>
-            </ul>
-            <button class="btn-accent"><img src="images/bagg.svg">BROWSE OUR WORK</button>
-          </div>
+        <div class="text__img"><img src="./images/mac.png" alt="iMac"></div>
+        <div class="text__wrp">
+          <h4 class="text-block1">About us</h4>
+          <h2 class="text-block">Some words<strong class="bold-h2"> about us</strong></h2>
+          <div class="blockquote--double"></div>
+          <p class="text">We love building and rebuilding brands through our specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+          <ul class="home-list">
+            <li><img src="./images/li.svg" alt="list"><strong class="main-bold">Mission -</strong><em>We deliver uniqueness and quality</em></li>
+            <li><img src="./images/li.svg" alt="list"><strong class="main-bold">Skills -</strong><em>Delivering fast and excellent results</em></li>
+            <li><img src="./images/li.svg" alt="list"><strong class="main-bold">Clients -</strong><em>Satisfied clients thanks to our experience</em></li>
+          </ul>
+          <button class="btn-accent"><img src="./images/bagg.svg" alt="bag">BROWSE OUR WORK</button>
         </div>
       </div>
     </section>
     <section id="team">
       <div class="container">
-        <h2 class="h2-main">Meet <strong class="h2-main-bold"> our team</strong></h2>
+        <h2 class="h2-main">Meet<strong class="h2-main-bold"> our team</strong></h2>
         <div class="blockquote-big"></div>
         <div class="blockquote-small"></div>
         <div class="responsive">
           <div>
-            <div class="rounded-img"></div>
-            <h4>Jason Statham</h4>
-            <p class="text-title2">Knife designer</p>
+            <div class="rounded-img"><img src="./images/78.jpg" alt="person-1"></div>
+            <h4>Nati Zandani</h4>
+            <p class="text-title2">CEO</p>
             <p class="text-item">Do not seek to change what has come before. Seek to create that which has not.</p>
           </div>
           <div>
-            <div class="rounded-img"></div>
-            <h4>Van Damme</h4>
-            <p class="text-title2">No English</p>
+            <div class="rounded-img"><img src="./images/3.jpg" alt="person-2"></div>
+            <h4>Reut Gonen</h4>
+            <p class="text-title2">Manager</p>
             <p class="text-item">Do not seek to change what has come before. Seek to create that which has not.</p>
           </div>
           <div>
-            <div class="rounded-img"></div>
-            <h4>Sylvester Stallone</h4>
-            <p class="text-title2">Cigar Lover</p>
+            <div class="rounded-img"><img src="./images/4.jpg" alt="person-3"></div>
+            <h4>Libi Levinger</h4>
+            <p class="text-title2">UX/UI Designer</p>
             <p class="text-item">Do not seek to change what has come before. Seek to create that which has not.</p>
           </div>
           <div>
-            <div class="rounded-img"></div>
-            <h4>Jet Li</h4>
-            <p class="text-title2">I need more money</p>
+            <div class="rounded-img"><img src="./images/243.jpg" alt="person-4"></div>
+            <h4>Liran Halevi</h4>
+            <p class="text-title2">Frontend Developer</p>
             <p class="text-item">Do not seek to change what has come before. Seek to create that which has not.</p>
           </div>
           <div>
-            <div class="rounded-img"></div>
-            <h4>Jason Statham</h4>
-            <p class="text-title2">Knife designer</p>
+            <div class="rounded-img"><img src="./images/5.jpg" alt="person-2"></div>
+            <h4>Avi Blayer</h4>
+            <p class="text-title2">Full Stack Developer</p>
             <p class="text-item">Do not seek to change what has come before. Seek to create that which has not.</p>
           </div>
         </div>
@@ -91,28 +99,28 @@
     </section>
     <section id="services">
       <div class="container">
-        <h2 class="h2-main-black">Take a look at <strong class="h2-main-bold-black"> our services</strong></h2>
+        <h2 class="h2-main-black">Take a look at<strong class="h2-main-bold-black"> our services</strong></h2>
         <div class="blockquote-big"></div>
         <div class="blockquote-small"></div>
         <p class="lorem">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         <div class="item__wrp">
-          <div class="item1">
-            <div class="rounded-img--border"><img src="images/screen.svg"></div>
+          <div class="item">
+            <div class="rounded-img--border"><img src="./images/screen.svg"></div>
             <h3>Web design</h3>
             <p class="text-item--black">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
           </div>
-          <div class="item2">       
-            <div class="rounded-img--border"><img src="images/tele.svg"></div>
+          <div class="item">
+            <div class="rounded-img--border"><img src="./images/tele.svg"></div>
             <h3>Mobile apps</h3>
             <p class="text-item--black">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
           </div>
-          <div class="item3">
-            <div class="rounded-img--border"><img src="images/cam.svg"></div>
+          <div class="item">
+            <div class="rounded-img--border"><img src="./images/cam.svg"></div>
             <h3>Photography</h3>
             <p class="text-item--black">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
           </div>
-          <div class="item4">
-            <div class="rounded-img--border"><img src="images/rupor.svg"></div>
+          <div class="item">
+            <div class="rounded-img--border"><img src="./images/rupor.svg"></div>
             <h3>Marketing</h3>
             <p class="text-item--black">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
           </div>
@@ -121,38 +129,42 @@
     </section>
     <section id="clients">
       <div class="container">
-        <h2 class="h2-main">Some of <strong class="h2-main-bold"> our clients</strong>       </h2>
+        <h2 class="h2-main">Some of<strong class="h2-main-bold"> our clients</strong></h2>
         <div class="blockquote-big"></div>
         <div class="blockquote-small"></div>
         <div class="responsive">
-          <div><img src="images/chanel.png"></div>
-          <div><img src="images/zara.png"></div>
-          <div><img src="images/guerlain.png">         </div>
-          <div><img src="images/lancome.png"></div>
-          <div><img src="images/lacoste.png"></div>
-          <div><img src="images/gucci.png"></div>
+          <div><img src="./images/chanel.svg"></div>
+          <div><img src="./images/zara.svg"></div>
+          <div><img src="./images/guerlain.svg"></div>
+          <div><img src="./images/lancome.svg"></div>
+          <div><img src="./images/lacoste.svg"></div>
+          <div><img src="./images/gucci.svg"></div>
         </div>
       </div>
     </section>
     <section id="contact">
       <div class="container">
         <div class="h2__center">
-          <h2 class="h2-main-black">Feel free to <strong class="h2-main-bold-black"> contact us</strong></h2>
+          <h2 class="h2-main-black">Feel free to<strong class="h2-main-bold-black"> contact us</strong></h2>
         </div>
         <div class="blockquote-big"></div>
         <div class="blockquote-small"></div>
         <p class="lorem">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        <form>
-          <div class="form__input--name">
-            <label>Full Name <sup class="required">* <br></sup></label>
-            <input class="field-divided" type="text" name="field">
+        <form action="/" method="post">
+          <div class="form__wrapper">
+            <div>
+              <label for="name">Full Name<sup class="required">*</sup><br></label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+              <label for="email">Email<sup class="required">*</sup><br></label>
+              <input type="email" name="email" id="email" required>
+            </div>
           </div>
-          <div class="form__input--email">
-            <label>Email <sup class="required">* <br></sup></label>
-            <input class="field-divided" type="email">
+          <div class="form__message">
+            <label for="message">Message<sup class="required">*</sup><br></label>
+            <textarea class="form__input--text" type="text" name="message" id="message" required></textarea>
           </div>
-          <label>Message <sup class="required">* <br></sup></label>
-          <textarea class="form__input--text" type="text"></textarea>
           <button class="btn-form" type="submit">Send</button>
         </form>
       </div>
@@ -160,11 +172,11 @@
     <footer>
       <div class="container">
         <div class="footer__text">
-          <p>ALL RIGHTS RESERVED. COPYRIGHT © 2018
-            <p class="footer__text--bold">SPIRIT8</p>
-          </p>
+          <p>ALL RIGHTS RESERVED. COPYRIGHT © 2020</p>
+          <p class="footer__text--bold">SPIRIT8</p>
+          <p></p>
         </div>
-        <div class="footer__social"><a href="#"><img src="images/facebook.svg"></a><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/google.svg"></a><a href="#"><img src="images/linkedin.svg"></a><a href="#"><img src="images/dribbble.svg"></a></div>
+        <div class="footer__social"><a href="#"><img src="./images/facebook.svg"></a><a href="#"><img src="./images/twitter.svg"></a><a href="#"><img src="./images/google.svg"></a><a href="#"><img src="./images/linkedin.svg"></a><a href="#"><img src="./images/dribbble.svg"></a></div>
       </div>
     </footer>
   </body>
