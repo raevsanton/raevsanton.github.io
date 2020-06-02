@@ -39,8 +39,6 @@ h1 {
     float: right;
     margin-top: 6px;
     margin-right: 8px;
-    border-radius: 100px;
-    opacity: .8;
     transition-delay: 0.1s;
     & img {
       visibility: hidden;
@@ -164,26 +162,10 @@ h1 {
   }
 
 .content__right--text {
-  padding: 255px 0;
-  &:hover {
-    transition: visibility 0s 3s, opacity 2s linear;
-    background: linear-gradient(to right, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
-    -moz-animation: shine 3s linear infinite;
-    @keyframes shine {
-      to {
-        visibility: visible;
-        transition: opacity 8s linear;
-        background-position: 200% center;
-      }
-    }
-  }
+  font-size:48px;
+  background:-webkit-linear-gradient(45deg, #495bff, #231557 80%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 .content__left--list {

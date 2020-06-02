@@ -57,8 +57,7 @@ a {
   display: block;
   -webkit-transition: 0.4s ease;
   -o-transition: 0.4s ease;
-  transition: 0.4s ease;
-  position: fixed; }
+  transition: 0.4s ease; }
   .content__close--design:hover {
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
@@ -170,8 +169,6 @@ h1 {
     float: right;
     margin-top: 6px;
     margin-right: 8px;
-    border-radius: 100px;
-    opacity: .8;
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s; }
@@ -300,40 +297,10 @@ h1 {
     transform: translate(-2px, 2px); } }
 
 .content__right--text {
-  padding: 255px 0; }
-  .content__right--text:hover {
-    -webkit-transition: visibility 0s 3s, opacity 2s linear;
-    -o-transition: visibility 0s 3s, opacity 2s linear;
-    transition: visibility 0s 3s, opacity 2s linear;
-    background: -webkit-gradient(linear, left top, right top, color-stop(20%, #231557), color-stop(40%, #495bff), color-stop(60%, #495bff), color-stop(80%, #231557));
-    background: -webkit-linear-gradient(left, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
-    background: -o-linear-gradient(left, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
-    background: linear-gradient(to right, #231557 20%, #495bff 40%, #495bff 60%, #231557 80%);
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: shine 3s linear infinite;
-    animation: shine 3s linear infinite;
-    -moz-animation: shine 3s linear infinite; }
-
-@-webkit-keyframes shine {
-  to {
-    visibility: visible;
-    -webkit-transition: opacity 8s linear;
-    -o-transition: opacity 8s linear;
-    transition: opacity 8s linear;
-    background-position: 200% center; } }
-
-@keyframes shine {
-  to {
-    visibility: visible;
-    -webkit-transition: opacity 8s linear;
-    -o-transition: opacity 8s linear;
-    transition: opacity 8s linear;
-    background-position: 200% center; } }
+  font-size: 48px;
+  background: -webkit-linear-gradient(45deg, #495bff, #231557 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .content__left--list {
   display: none;
