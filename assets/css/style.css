@@ -425,7 +425,9 @@ h1 {
   .design__img {
     width: 100%; }
   .design__video {
-    width: 75%; } }
+    width: 75%; }
+  .content__left--list {
+    width: 100%; } }
 
 @media (min-width: 480px) and (max-width: 768px) {
   .design__container {
